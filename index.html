@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- <script src="https://unpkg.com/react-toastify"></script> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+</head>
+    <script src="https://kit.fontawesome.com/1bb4be7813.js" crossorigin="anonymous"></script>
+    <!-- <passage-auth app-id="PASTE PASSAGE APP ID HERE"></passage-auth> -->
+    <script src="https://psg.so/web.js"></script>
+
+    <title>The Parallax engine</title>
+</head>
+<body>
+    <nav class="navbar" id="nav">
+        <ul>
+            <!-- <img src="logo.png" id="logo" height="100" width="100"> -->
+            <li><img src="logo.jpg" width="70" style="margin-top:-2.5vh;" alt=""></li>
+            <li class="item listitem">Home</li>
+            <li class="listitem">About us</li>
+           <li class="listitem" style="width: 11.2vh;">Contact us</li>
+           <li class="listitem whyp" style="width: 20.2vh;">Why Parallax Engine</li>
+           <!-- <li class="listitem">Contact us</li> -->
+           <li class="listitem toggle">
+               <input onclick="Darkmode()" type="checkbox" class="checkbox" id="checkbox">
+               <label for="checkbox" class="label">
+                   <!-- <svg  white;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc.<path d="M32 256c0-123.8 100.3-224 223.8-224c11.36 0 29.7 1.668 40.9 3.746c9.616 1.777 11.75 14.63 3.279 19.44C245 86.5 211.2 144.6 211.2 207.8c0 109.7 99.71 193 208.3 172.3c9.561-1.805 16.28 9.324 10.11 16.95C387.9 448.6 324.8 480 255.8 480C132.1 480 32 379.6 32 256z"/></svg> -->
+                   <i class='fas fa-moon'></i>
+                   <i class='fas fa-sun'></i>
+                    <div class='ball'>
+                    </label>
+                </li>
+                <li>
+                    <div class="hamburger">
+                        <div class="line"></div>
+                        <div class="line"></div>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <div class="maincontainer">
+        <div class="main">
+            <img src="m.jpg" width="2000" height="800" style="position: absolute;margin-top: 2vh;z-index: -999999;" alt="">
+            <div class="wrap">
+                
+                <h1 class="title">The Parallax Engine</h1>
+                <p class="tagline">Your investement partener.</p>
+            </div>
+            <div class="container">
+                <div class="cursor"></div>
+            </div>
+            <!-- <div class="caret"></div> -->
+            <!-- <p class="para">The Parallax Engine is a upcoming startup organization.<br>We use Artificial Intelligence and Data Science techniques to forcast profitable investments for our customers</p> -->
+            <button onclick="start()" class="started">Get Started</button>
+    </div>
+    <!-- <div class="cards">
+        <div class="card secure">
+            <i style="color: white; font-size: 5vh;" class="fa-solid fa-lock"></i>
+            <h1>Secure transactions</h1>
+        </div>
+        <div class="card accurate">
+            <i style="color: white; font-size: 5vh;" class="fa-solid fa-check"></i>
+            <h1>Accurate results</h1>
+        </div>
+        <div class="card twenty">
+            <i style="color: white; font-size: 5vh;" class="fa-solid fa-phone"></i>
+            <h1>24/7 Consultaion</h1>
+            <p>
+                Secure transactions by using blockchain<br> to keep your identity anonymous and<br> safe you from any scams
+
+            </p>
+        </div>
+    </div> -->
+    <div class="about">
+        <img src="1.png" height="400v" class="growth" width="800" alt="">
+        <p class="gpara">The Parallax Engine is a platform which uses A.I, machine learning ,deep learning to predict the best stocks for you.<br>
+            We use data science to see your interest in different stocks and tell you when is the lowest price and you will get a good return.<br>
+            Over the period of time we have improved our user experience and our algorithms which have improved our accuracy.<br>
+            Currently we are largest machine learning stocks predict all over the world.<br>
+            with over 6 headquarters in U.S,Canada,India,Australia,Russia and United Kingdom.<br>
+            We are proud telling that we have over 10,000 happy customer ,every 9 people out 10 gets huge returns from The Parallax Engine
+            
+            
+        </p>
+    </div>
+    <div class="icons">
+        <div class="iitem">
+            <p class="follows igf">12,00</p>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+        <div class="iitem">
+            <p class="follows ytf">12,00</p>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <div class="iitem">
+            <p class="follows faf">12,00</p>
+            <i class="fa-brands fa-facebook"></i>
+        </div>
+    </div>
+    <div class="form">
+        <passage-auth app-id="RjggiFHGUzZjNK9HimePyBAb" class="log" style="z-index: 99999;"></passage-auth>
+          </div> 
+    </div>
+    <div class="how">
+        <h1 class="hh1" style="color:white; font-family: sans-serif;">How we work?</h1>
+        <img src="3.png" width="800" alt="" class="hart">
+    </div>
+    <div class="work">
+        <div style="display: flex;gap: 6px;margin-left: 55vh;margin-top: 52vh;" class="cards">
+
+            <div class="card se text-bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header">Secure transactions</div>
+                <div class="card-body">
+     
+                    <p class="card-text">Secure transactions by using blockchain to keep your identity anonymous and safe you from any scams
+                    </p>
+                </div>
+            </div>
+            <div class="card ac text-bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header">Accurate results</div>
+                <div class="card-body">
+
+                    <p class="card-text">We use the most advanced machine learning technology to predict the flow of stocks and tell the accurate time to invest
+                    </p>
+                </div>
+            </div>
+            <div class="card tw text-bg-dark mb-3" style="max-width: 18rem;">
+                <div class="card-header">24/7 consultance</div>
+                <div class="card-body">
+                 
+                    <p class="card-text">Our costumer service is available throughout the year 24/7 and our experts are always present to help you 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div></div>
+    <div class="space"></div>
+</body>
+</html>
