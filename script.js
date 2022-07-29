@@ -3,6 +3,15 @@ const toggle = document.querySelector(".toggle")
 const bg = document.querySelector(".label")
 const ball = document.querySelector(".ball")
 const form = document.querySelector('.form')
+document.querySelector('.homeb').addEventListener("click",()=>{
+    document.querySelector('.homeb').scrollIntoView({behavior:"smooth"})
+})  
+document.querySelector('.aboutb').addEventListener("click",()=>{
+    document.querySelector('.grsc').scrollIntoView({behavior:"smooth"})
+})  
+document.querySelector('.whyp').addEventListener("click",()=>{
+    document.querySelector('.work').scrollIntoView({behavior:"smooth"})
+})  
 var body = document.body
 // if(document.body.style.backgroundColor === "rgb(33, 34, 39)"){
     // if(document.getElementsByTagName("body").style.backgroundColor === "#212227")
